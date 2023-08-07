@@ -4,6 +4,7 @@ body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   position: relative;
+  min-width: 320px;
 }
 img {
   border: 0; /* kills Gecko bug when img's are placed inside links */
@@ -49,44 +50,59 @@ nav a {
 .navIcons {
   display: none;
 }
+/* ----Navbar Burger---- */
 
+.burgerContent {
+  position: absolute;
+  z-index: 2;
+  width: 320px;;
+  height: 600px;
+  background-color: #e3c3e9;
+  gap: 0px;
+  padding: 20px 40px 0 30px;
+
+}
+.firstPartBurger a {
+  display: block;
+  font-weight: 600;
+  font-size: larger;
+  margin-left: 8px;
+  margin-top: 5px;
+}
 /* -----Header------ */
 
 header {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 20px 0 50px;
+  padding: 0 0px 0 0px;
   background-image: url("./images/bh3.svg");
   background-size: 100%;
   background-repeat: no-repeat;
   z-index: 0;
   width: 100%;
-  max-width: 1448px;
+  gap: 40px;
   min-width: 330px;
   min-height: 800px;
+
 }
 
 h1 {
   /* font-size: 4.4rem; */
   font-size: 4.8vw;
   max-width: 660px;
+  font-weight: 550;
 }
 .headerText {
   display: flex;
   align-items: center;
   min-height: 300px;
-  width: 800px;
-  /* height: 600px; */
-  margin-right: 10px;
-  /* background-image: url("./images/cloud3.svg");
-  background-size: 70%;
-  background-position-y: -20px;
-  background-position-x: 250px;
-  background-repeat: no-repeat; */
+  width: 600px;
+  
+
+
 }
 .headerText p {
-  /* width: 400px; */
   box-sizing: border-box;
 }
 
@@ -96,24 +112,52 @@ h1 {
   max-width: 660px;
 
   margin-top: 50px;
+  
 }
 .imageBox {
   display: flex;
-  /* top: 100px; */
-  /* flex-grow: 1; */
   
 
 }
 
+
+/* ----Therapist----- */
+
+.TherapistBox{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 100px 0 50px;
+  justify-content: space-around;
+  /* gap: 200px; */
+  /* text-align: center; */
+  align-items: center;
+  background-image: url("./images/lw2.svg") ;
+  height: 700px;
+  background-size: 120%;
+  background-color: #FBE6FE;
+
+}
+.TherapistText{
+  width: 500px;
+  margin-right: 120px;
+}
+.TherapistText h2{
+  font-size: 3rem;
+  font-weight: 400;
+}
+.TherapistText p {
+  font-size: 20px;
+}
+
+.TherpistsImg{
+  border-radius: 10px;
+}
 @media only screen and (max-width: 1100px) {
   .headerText{
     justify-content: center;
     text-align: center;
   }
-  /* .headerText p{
-    display: flex;
-    justify-content: center;
-  } */
+
   header {
     flex-wrap: wrap;
   }
