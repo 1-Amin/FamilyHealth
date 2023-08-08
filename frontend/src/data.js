@@ -22,7 +22,7 @@ const imageData = [
   {
     img: "https://dy7glz37jgl0b.cloudfront.net/betterhelp_two/photos/therapists/p.casthely.jpg?v=0177f73d2461",
     title: "Duke"
-  },
+  }
 ];
 
 

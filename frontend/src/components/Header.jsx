@@ -5,7 +5,7 @@ function Header() {
     <header>
       <div className="headerText">
       <div>
-        <h1>Connect mentally with your Family</h1>
+        <h1>Connect mentally with your <span>Family</span></h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
         
@@ -13,7 +13,7 @@ function Header() {
         </div>
       </div>
       <div className="imageBox">
-        <img className="headerImage" src="./images/family2.png"></img>
+        <img className="headerImage" src="./images/family3.png"></img>
       </div>
     </header>
   );

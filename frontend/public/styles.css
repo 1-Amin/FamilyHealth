@@ -11,7 +11,36 @@ img {
   vertical-align: bottom; /* set vertical align to bottom for IE */
 }
 /* ------------------- Defaults ------------------- */
-
+h1 {
+  /* font-size: 4.4rem; */
+  font-size: 4.8vw;
+  max-width: 660px;
+  font-weight: 520;
+}
+h2 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+h4 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 0;
+  padding-bottom: 20px;
+}
+p {
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+a{
+  font-weight: 450;
+}
+hr {
+  height: 1px;
+}
+span {
+  color: #c075cd;
+}
 /* ----Navbar---- */
 nav {
   display: flex;
@@ -19,13 +48,11 @@ nav {
   width: 100%;
   max-width: 1400px;
   flex-wrap: wrap;
-  padding: 0 40px 0 30px;
+  /* padding: 0 40px 0 30px; */
   position: absolute;
   z-index: 0;
 }
-nav a {
-  font-weight: 500;
-}
+
 .navFirstPart {
   display: flex;
   align-items: center;
@@ -39,7 +66,6 @@ nav a {
   justify-content: end;
   gap: 20px;
   flex-grow: 1;
-
 }
 
 .logo {
@@ -55,12 +81,11 @@ nav a {
 .burgerContent {
   position: absolute;
   z-index: 2;
-  width: 320px;;
+  width: 320px;
   height: 600px;
   background-color: #e3c3e9;
   gap: 0px;
   padding: 20px 40px 0 30px;
-
 }
 .firstPartBurger a {
   display: block;
@@ -76,31 +101,22 @@ header {
   justify-content: center;
   align-items: center;
   padding: 0 0px 0 0px;
-  background-image: url("./images/bh3.svg");
+  background-image: url("./images/bh5.svg");
   background-size: 100%;
   background-repeat: no-repeat;
   z-index: 0;
   width: 100%;
   gap: 40px;
   min-width: 330px;
+
   min-height: 800px;
-
 }
 
-h1 {
-  /* font-size: 4.4rem; */
-  font-size: 4.8vw;
-  max-width: 660px;
-  font-weight: 550;
-}
 .headerText {
   display: flex;
   align-items: center;
   min-height: 300px;
   width: 600px;
-  
-
-
 }
 .headerText p {
   box-sizing: border-box;
@@ -112,48 +128,123 @@ h1 {
   max-width: 660px;
 
   margin-top: 50px;
-  
 }
 .imageBox {
   display: flex;
-  
-
 }
 
+/* ----Customer----- */
+
+.CustomerBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-image: url("./images/ch.svg");
+  align-items: center;
+  min-height: 500px;
+  /* background-size: cover; */
+  background-position-y: -380px;
+  background-repeat: no-repeat;
+}
+.CustomerHeader {
+  width: 400px;
+  margin-right: 20px;
+}
+.CustomerNumbers h4 {
+  font-size: 24px;
+  font-weight: 500;
+  color: #c075cd;
+}
 
 /* ----Therapist----- */
 
-.TherapistBox{
+.TherapistBox {
   display: flex;
   flex-wrap: wrap;
   padding: 0 100px 0 50px;
   justify-content: space-around;
-  /* gap: 200px; */
-  /* text-align: center; */
   align-items: center;
-  background-image: url("./images/lw2.svg") ;
-  height: 700px;
-  background-size: 120%;
-  background-color: #FBE6FE;
-
+  background-image: url("./images/lw10.svg");
+  height: auto;
+  background-size: 100%;
+  background-color: #ccf1c6;
+  min-height: 770px;
+  background-repeat: no-repeat;
 }
-.TherapistText{
+.TherapistText {
   width: 500px;
-  margin-right: 120px;
-}
-.TherapistText h2{
-  font-size: 3rem;
-  font-weight: 400;
-}
-.TherapistText p {
-  font-size: 20px;
 }
 
-.TherpistsImg{
+.TherpistsImg {
   border-radius: 10px;
+  width: 100%;
+  height: auto;
+  min-width: 80px;
 }
+
+/* ----How It works---- */
+
+.HowItWorksContainer {
+  background-image: url("./images/hw4.svg");
+  background-repeat: no-repeat;
+  /* background-color: #c075cd; */
+}
+.HowItWorksBox {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  align-items: center;
+}
+.HowItWorksHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin: 30px;   */
+}
+.HowItWorksHeader h2 {
+  margin: 30px;
+}
+.HowItWorksImg {
+  width: 100%;
+  height: auto;
+  max-width: 700px;
+}
+.HowItWorksText {
+  width: 420px;
+}
+
+.HowItWorksArrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+/* ----Footer---- */
+.FooterContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 240px;
+  background-image: url("./images/fw.svg");
+  margin-top: 40px;
+}
+.FooterTextBox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.FooterText {
+  display: flex;
+  gap: 40px;
+  margin: 10px;
+}
+
 @media only screen and (max-width: 1100px) {
-  .headerText{
+  .headerText {
     justify-content: center;
     text-align: center;
   }
@@ -161,20 +252,53 @@ h1 {
   header {
     flex-wrap: wrap;
   }
-  h1{
+  h1 {
     font-size: 4rem;
-    
+  }
+  h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  p {
+    font-size: 1rem;
+    margin: 20px;
+  }
+
+  .CustomerBox {
+    background-image: none;
+    min-height: auto;
+    background-repeat: repeat;
+    background-position-y: auto;
+    min-height: auto;
+  }
+  .CustomerBox p {
+    margin: 0px;
+    font-size: 18px;
+  }
+  .TherapistBox {
+    background-image: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    background-color: white;
+    background-repeat: repeat;
+    min-height: auto;
+  }
+  .HowItWorksContainer {
+    text-align: center;
+  }
+  .HowItWorksArrow {
+    height: 140px;
   }
   
 }
 
 @media only screen and (max-width: 900px) {
-
-  header{
+  header {
     background-image: url("./images/bh6.svg");
-    
   }
-  .logo{
+  .logo {
     margin-right: 0px;
   }
   nav {
@@ -186,28 +310,47 @@ h1 {
     justify-content: center;
     align-items: center;
   }
-  .headerImage{
+  .headerImage {
     margin-top: 0px;
   }
-  .navIcons{
+  .navIcons {
     display: inline-block;
   }
-  .navFirstPart, .navSecondPart{
-      display: none;
-  }
-
-
+  .navFirstPart,
   .navSecondPart {
-    width: 10px;
+    display: none;
   }
+  .FooterContainer{
+    height: auto;
+    background-color: #ccf1c6;
+    background-repeat: no-repeat;
+  }
+  .FooterTextBox {
+    margin: 40px 0px 20px 0px;
+    justify-content: space-around;
+    gap: 140px;
+    
+  }
+  .FooterText a {
+    padding: 0;
+    margin: 0;
+  }
+  .FooterText{
+    flex-direction: column; 
+    /* justify-content: space-between; */
+    margin: 0;
+    gap: 10px;
+    
+  }
+
 }
 
-@media only screen and (max-width: 700px){
- 
-  h1{
+@media only screen and (max-width: 700px) {
+  h1 {
     width: 330px;
     font-size: 3rem;
   }
+
   .headerText p {
     width: 330px;
   }

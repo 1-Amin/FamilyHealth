@@ -11,7 +11,7 @@ function Navbar() {
       <nav>
         <div className="navIcons">
           <MenuIcon
-            sx={{ zIndex: "10" }}
+            sx={{ zIndex: "10", marginLeft: "20px" }}
             fontSize="large"
             onClick={() => {
               setSlide(!slide);
@@ -22,7 +22,7 @@ function Navbar() {
     <img className="logo" src="./images/logo.png" /> 
         
         <div className="navIcons">
-          <PhoneIcon fontSize="large" />
+          <PhoneIcon fontSize="large" sx={{marginRight: "20px"}}/>
         </div>
         <div className="navFirstPart">
           <a>Business</a>
