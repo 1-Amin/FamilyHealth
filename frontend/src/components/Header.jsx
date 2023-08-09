@@ -8,8 +8,8 @@ function Header() {
         <h1>Connect mentally with your <span>Family</span></h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        
         </p>
+        
         </div>
       </div>
       <div className="imageBox">
